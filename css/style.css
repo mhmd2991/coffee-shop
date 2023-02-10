@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -105,7 +105,6 @@ section {
     position: relative;
 }
 
-
 .overlay-bottom::after,
 .overlay-top::before {
     content: "";
@@ -130,7 +129,7 @@ section {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    columns: #495057;
     background-color: var(--whiteColor);
     border: 0.1rem solid #ced4da;
     padding: 2.4rem;
@@ -208,19 +207,19 @@ nav .container .menu-bar ul {
     position: absolute;
     left: 0;
     top: 4rem;
-    background-color: var(--titleColor);
     width: 100%;
+    background-color: var(--titleColor);
     padding: 1.6rem;
     display: flex;
     flex-direction: column;
-    z-index: 1;
     visibility: hidden;
     opacity: 0;
+    z-index: 1;
     transition: all .5s ease-in-out;
 }
 
 nav .container .menu-bar ul.active {
-    top: 5.7rem;
+    top: 5.6rem;
     visibility: visible;
     opacity: 1;
 }
@@ -229,8 +228,8 @@ nav .container .menu-bar ul li a {
     display: block;
     padding: .8rem 1.6rem;
     font-weight: 700;
-    text-transform: capitalize;
     font-size: 1.6rem;
+    text-transform: capitalize;
     letter-spacing: .1rem;
     color: #FFFBF2;
     transition: all .3s ease-in-out;
@@ -249,15 +248,12 @@ header {
     background-position: center center;
     background-size: cover;
     padding: 4rem 0;
-    margin-bottom: 4.8em;
+    margin-bottom: 4.8rem;
 }
 
 header::before {
     content: "";
     position: absolute;
-}
-
-header::before {
     top: 0;
     left: 0;
     width: 100%;
@@ -333,26 +329,22 @@ header .container .hero-text h3 {
 }
 
 .about-us .container .row .col h3 {
-    margin-bottom: 1.6rem;
-    font-weight: 700;
     font-size: calc(2.2rem + 1.5vw);
+    font-weight: 700;
     text-transform: capitalize;
+    margin-bottom: 1.6rem;
 }
 
 .about-us .container .row .col h5 {
-    margin-bottom: 1.6rem;
-    font-weight: 400;
     font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
     display: flex;
     align-items: center;
 }
 
 .about-us .container .row .col p {
     margin-bottom: 1.6rem;
-}
-
-.about-us .container .row .col a {
-    padding: .8rem 2.4rem;
 }
 
 .about-us .container .row .col:nth-child(2) {
@@ -365,10 +357,10 @@ header .container .hero-text h3 {
     height: 100%;
 }
 
-.about-us .container .row .col img {
-    object-fit: cover;
+.about-us .container .row .col .image-inner img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .about-us .container .row .col h5 i {
@@ -381,7 +373,7 @@ header .container .hero-text h3 {
 }
 
 /*End About Section*/
-/*Satrt Services Section*/
+/*Start Services Section*/
 .services .container .row .col {
     padding: 0 1.5rem;
     margin-bottom: 4.8rem;
@@ -426,24 +418,24 @@ header .container .hero-text h3 {
 
 .offer .container {
     position: relative;
-    padding: 4.8rem 0;
+    padding: 4.8rem 1.5rem;
     text-align: center;
 }
 
 .offer .container h1 {
-    color: var(--goldColor);
-    margin-top: 1.6rem;
     font-size: calc(2.52rem + 3.9vw);
     font-weight: 700;
+    color: var(--goldColor);
+    margin-top: 1.6rem;
     margin-bottom: .8rem;
 }
 
 .offer .container h2 {
+    font-size: calc(2.2rem + 1.5vw);
+    font-weight: 700;
     color: var(--whiteColor);
     text-transform: capitalize;
     margin-bottom: 1.6rem;
-    font-size: calc(2.2rem + 1.5vw);
-    font-weight: 700;
 }
 
 .offer .container h3 {
@@ -597,9 +589,9 @@ header .container .hero-text h3 {
     display: flex;
     align-items: center;
     gap: 1.6rem;
-    padding: .8rem 0;
     font-size: 1.6rem;
     color: var(--whiteColor);
+    padding: .8rem 0;
 }
 
 .reservation .container .row .col .reserve-info ul li i {
@@ -631,7 +623,7 @@ header .container .hero-text h3 {
 }
 
 .reservation .container .row .col form input:focus {
-    box-shadow: 0 0 0 0.2rem rgb(218 159 91 / 25%);
+    box-shadow: 0 0 0 0.2rem rgba(218 159 91 / 25%);
 }
 
 .reservation .container .row .col form input {
@@ -649,7 +641,7 @@ header .container .hero-text h3 {
 }
 
 /*End Reservation Section*/
-/*Satrt Testimonials Section*/
+/*Start Testimonials Section*/
 .testimonials .container .row .testimonial {
     padding-right: 2.5rem;
 }
@@ -666,14 +658,14 @@ header .container .hero-text h3 {
     height: 8rem;
 }
 
-.testimonials .row .testimonial .testimonial-top .testimonal-info h3 {
+.testimonials .row .testimonial .testimonial-top .testimonial-info h3 {
     font-size: calc(2.04rem + .3vw);
     font-weight: 500;
     text-transform: capitalize;
     margin-bottom: .8rem;
 }
 
-.testimonials .row .testimonial .testimonial-top .testimonal-info i {
+.testimonials .row .testimonial .testimonial-top .testimonial-info i {
     font-size: 1.6rem;
     text-transform: capitalize;
 }
@@ -699,9 +691,9 @@ header .container .hero-text h3 {
 .swiper-pagination-bullet-active {
     background-color: var(--titleColor);
 }
-
 /*End Slider Section*/
-/*Satrt Footer*/
+
+/*Start Footer Section*/
 footer {
     position: relative;
     background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url(../img/bg.jpg);
@@ -863,7 +855,7 @@ footer .copyright .container p a {
 
 }
 
-/*End Footer*/
+/*End Footer Section*/
 /*Responsive*/
 @media(min-width: 576px) {
     header {
@@ -881,7 +873,7 @@ footer .copyright .container p a {
     }
 
     .services .container .row .col .box-text {
-        flex: 0 0 58.33333%;
+        flex: 0 0 58.3333%;
         padding-left: 1.5rem;
     }
 
@@ -938,7 +930,7 @@ footer .copyright .container p a {
     }
 
     .about-us .container .row .col {
-        flex: 0 0 33.33333%;
+        flex: 0 0 33.3333%;
         padding: 4.8rem 0;
     }
 
@@ -1003,28 +995,30 @@ footer .copyright .container p a {
         height: 100vh;
     }
 
-    header .container .hero-text h1 {
-        font-size: 12.8rem;
-    }
-
-    header .container .hero-text h3,
-    header .container .hero-text h2 {
-        font-size: 3.2rem;
+    header .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     h1 {
         font-size: 5.6rem;
     }
 
+    header .container .hero-text h1 {
+        font-size: 12.8rem;
+    }
+
+    header .container .hero-text h2,
+    header .container .hero-text h3 {
+        font-size: 3.2rem;
+    }
+
     h4,
     .offer .container h3,
     .menu .container .row .col .menu-box .menu-details h3 {
         font-size: 2.4rem;
-    }
-
-    .offer .container h1,
-    .reservation .container .row .col .reserve-info h1 {
-        font-size: 7.2rem;
     }
 
     .offer .container h2,
@@ -1034,13 +1028,12 @@ footer .copyright .container p a {
         font-size: 4rem;
     }
 
-    .about-us .container .row .col p,
-    .about-us .container .row .col h5 {
+    .about-us .container .row .col h5,
+    .about-us .container .row .col p {
         max-width: 35rem;
     }
 
     .about-us .container .row .col {
         padding: 4.8rem 1.5rem;
     }
-
 }
